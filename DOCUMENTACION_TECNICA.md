@@ -7,6 +7,10 @@
 - Curso: Introducción a Cognitive Computing
 - Docente: Farfán Madariaga, Jaime Moshe
 
+## Repositorio de la actividad 1
+
+Código, instrucciones y evidencias: https://github.com/Miguel-ACD/lab6-usuarios-aws
+
 ## Alcance implementado
 
 La aplicación permite que un administrador autenticado cree, consulte, actualice y elimine usuarios. Cada usuario puede tener nombre, correo, teléfono, rol, estado y foto de perfil.
