@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'admin/css/lab6.css' %}">
+{% endblock %}
+
+{% block branding %}
+  <div class="lab-brand">
+    <span class="lab-brand__mark" aria-hidden="true">U</span>
+    <div>
+      <div class="lab-brand__title">Usuarios Cloud</div>
+      <div class="lab-brand__subtitle">Laboratorio 6 · AWS</div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block nav-global %}
+  <a class="system-health" href="/health/">Servicio activo</a>
+{% endblock %}

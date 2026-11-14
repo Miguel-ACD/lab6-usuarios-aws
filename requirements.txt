@@ -1,0 +1,7 @@
+Django==5.2.7
+gunicorn==23.0.0
+psycopg[binary]==3.2.12
+boto3==1.40.67
+django-storages[s3]==1.14.6
+Pillow==12.0.0
+whitenoise==6.11.0

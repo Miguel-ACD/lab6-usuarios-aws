@@ -1,0 +1,9 @@
+.git
+.env
+__pycache__
+*.py[cod]
+*.sqlite3
+media
+staticfiles
+.pytest_cache
+.impeccable
