@@ -28,6 +28,12 @@ Aplicación web desarrollada para la pregunta 1 del Laboratorio 6 de Introducci�
 
 El navegador accede a la aplicación Django ejecutada en un contenedor Docker dentro de EC2. Django guarda los datos en Amazon RDS PostgreSQL y las fotos privadas en Amazon S3. La instancia EC2 obtiene acceso a S3 mediante un rol IAM, sin claves permanentes dentro del repositorio.
 
+- EC2 no expone SSH; la administración remota se realiza con AWS Systems Manager.
+- El puerto 8000 se limita a la IP usada para la demostración.
+- RDS no es público y solo admite PostgreSQL desde el grupo de seguridad de EC2.
+- S3 bloquea todo acceso público y cifra los objetos en reposo.
+- Las contraseñas se guardan cifradas en Parameter Store y no en GitHub.
+
 ## Variables para AWS
 
 En EC2, `.env` debe usar el endpoint privado de RDS en `POSTGRES_HOST`, la IP pública de EC2 en `DJANGO_ALLOWED_HOSTS` y el bucket creado en `AWS_STORAGE_BUCKET_NAME`. Nunca se debe subir `.env` al repositorio.
