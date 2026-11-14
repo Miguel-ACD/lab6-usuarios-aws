@@ -6,6 +6,9 @@ Aplicación web desarrollada para la pregunta 1 del Laboratorio 6 de Introducci�
 **Código:** 202110072  
 **Docente:** Farfán Madariaga, Jaime Moshe
 
+La descripción completa del despliegue se encuentra en [DOCUMENTACION_TECNICA.md](DOCUMENTACION_TECNICA.md).
+El recorrido recomendado para la demostración está en [GUION_VIDEO.md](GUION_VIDEO.md).
+
 ## Funciones implementadas
 
 - Acceso autenticado para el administrador.
@@ -49,3 +52,20 @@ En EC2, `.env` debe usar el endpoint privado de RDS en `POSTGRES_HOST`, la IP p�
 7. Aplicación funcionando desde la IP pública de EC2.
 
 El video demostrativo se preparará después de completar y verificar las capturas.
+
+## Evidencias incluidas
+
+1. [Docker local](evidencias/01_docker_contenedores.png)
+2. [Amazon RDS PostgreSQL](evidencias/02_rds_disponible.png)
+3. [Objeto de perfil en Amazon S3](evidencias/03_s3_objeto.png)
+4. [Instancia Amazon EC2](evidencias/04_ec2_instancia.png)
+5. [Contenedor Docker dentro de EC2](evidencias/05_docker_ec2.png)
+6. [Acceso administrativo](evidencias/06_login_admin.png)
+7. [Consulta de usuarios](evidencias/07_lista_usuarios.png)
+8. [Creación de usuario](evidencias/08_crear_usuario.png)
+9. [Actualización y eliminación](evidencias/09_editar_eliminar_usuario.png)
+
+## Enlaces de entrega
+
+- Aplicación desplegada: `http://100.30.202.40:8000/admin/`
+- Repositorio público: `https://github.com/Miguel-ACD/lab6-usuarios-aws`
